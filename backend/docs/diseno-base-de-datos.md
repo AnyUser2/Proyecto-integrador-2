@@ -67,7 +67,7 @@ erDiagram
 | **directors** | nombres, estado, fechaCreacion, fechaActualizacion | `nombres` requerido; `estado` ∈ {Activo, Inactivo} |
 | **productoras** | nombre, estado, slogan, descripcion, fechaCreacion, fechaActualizacion | `nombre` único y requerido; `estado` ∈ {Activo, Inactivo} |
 | **tipos** | nombre, descripcion, fechaCreacion, fechaActualizacion | `nombre` único y requerido |
-| **medias** | serial, titulo, sinopsis, url, imagenPortada, anioEstreno, genero, director, productora, tipo, fechaCreacion, fechaActualizacion | `serial` único; `url` única; referencias (ObjectId) a las 4 colecciones |
+| **media** | serial, titulo, sinopsis, url, imagenPortada, anioEstreno, genero, director, productora, tipo, fechaCreacion, fechaActualizacion | `serial` único; `url` única; referencias (ObjectId) a las 4 colecciones |
 
 > Mongoose pluraliza automáticamente los nombres de colección (`Director` → `directors`).
 
