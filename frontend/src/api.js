@@ -1,4 +1,8 @@
-const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:3000/api').replace(/\/$/, '');
+const API_URL = (
+  globalThis.__APP_CONFIG__?.apiUrl ||
+  import.meta.env.VITE_API_URL ||
+  'http://localhost:3000/api'
+).replace(/\/$/, '');
 
 export async function request(path, options = {}) {
   let response;
